@@ -254,7 +254,7 @@ body {
   display: flex;
   align-items: center;
   /* The key change is on the line below: */
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/images/hero-bg.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../landing-engenharia/assets/images/hero-bg.jpg');
   background-size: cover;
   background-position: center;
   color: white;
@@ -615,16 +615,31 @@ body {
     padding: 40px 24px;
   }
 
-  .contact-actions {
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .contact-actions .btn {
+  /* ====== CONTACT ACTIONS ====== */
+.contact-actions {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.contact-actions .btn {
     width: 100%;
     max-width: 300px;
     justify-content: center;
   }
+
+.btn-whatsapp {
+  background: linear-gradient(135deg, #25D366, #128C7E);
+  color: white;
+  border: none;
+}
+
+.btn-whatsapp:hover {
+  background: linear-gradient(135deg, #1ebe5c, #0d7d6c);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
   
   /* WhatsApp */
   .whatsapp-float {
