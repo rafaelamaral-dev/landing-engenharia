@@ -253,47 +253,22 @@ body {
   min-height: 90vh;
   display: flex;
   align-items: center;
-  background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+  /* The key change is on the line below: */
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/images/hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
   color: white;
   padding: 120px 0 80px;
   margin-top: 80px;
   overflow: hidden;
 }
 
-.hero-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.2);
-  z-index: 1;
+.hero p{
+  margin-bottom: 30px;
 }
 
-.hero-content {
-  position: relative;
-  z-index: 2;
-  max-width: 800px;
-}
-
-.hero h1 {
-  font-size: 3.5rem;
-  font-weight: 700;
-  line-height: 1.2;
-  margin-bottom: 24px;
-}
-
-.hero p {
-  font-size: 1.25rem;
-  margin-bottom: 40px;
-  opacity: 0.9;
-  max-width: 600px;
-}
-
-.hero-actions {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
+.hero .btn-ghost{
+  color: var(--background-white);
 }
 
 /* ====== SEÇÕES GERAIS ====== */
@@ -471,6 +446,26 @@ body {
   opacity: 0.9;
 }
 
+/* ====== CONTACT ACTIONS ====== */
+.contact-actions {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn-whatsapp {
+  background: linear-gradient(135deg, #25D366, #128C7E);
+  color: white;
+  border: none;
+}
+
+.btn-whatsapp:hover {
+  background: linear-gradient(135deg, #1ebe5c, #0d7d6c);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
 /* ====== FOOTER ====== */
 .site-footer {
   background-color: var(--background-dark);
@@ -618,6 +613,17 @@ body {
   /* Contact */
   .contact-box {
     padding: 40px 24px;
+  }
+
+  .contact-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .contact-actions .btn {
+    width: 100%;
+    max-width: 300px;
+    justify-content: center;
   }
   
   /* WhatsApp */
