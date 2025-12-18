@@ -24,9 +24,7 @@ Uma landing page moderna, responsiva e de alto desempenho desenvolvida para a **
 
 | Seção Hero (Desktop) | Navegação Mobile |
 | :---: | :---: |
-| *Imagem de capa com chamada principal* | *Menu hamburger funcional* |
-
-*(Recomendação: adicione screenshots reais do projeto na pasta `assets/images/` e atualize os links acima)*
+| ![Desktop Hero Section](assets/images/screenshot-hero-desktop.png) | ![Mobile Navigation](assets/images/screenshot-mobile-menu.png) |
 
 ---
 
@@ -122,7 +120,7 @@ Substitua os arquivos na pasta `assets/images/`, mantendo os **mesmos nomes e fo
 
 ## 📄 Licença
 
-Este projeto está licenciado sob a **Licença MIT** - veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+Este projeto está licenciado sob a **Licença MIT** - veja o arquivo [LICENSE](https://github.com/rafaelamaral-dev/landing-engenharia/blob/main/LICENSE) para mais detalhes.
 
 Você é livre para usar, copiar, modificar, publicar e distribuir este código, desde que inclua a nota de licença original.
 
